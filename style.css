@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    height: 800px;
+    background-image: url(img/Rectangle\ 111002150.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header__big{
+    color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 64px;
+font-weight: 700;
+line-height: 78px;
+letter-spacing: 0px;
+text-align: left;
+padding-top: 196px;
+padding-bottom: 24px;
+}
+
+.header__small{
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 64px;
+    
+}
+
+.top__button{
+    box-sizing: border-box;
+border: 1px solid rgb(32, 32, 39);
+border-radius: 60px;
+
+background: rgb(32, 32, 39);
+color: rgb(255, 255, 255);
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 141.69%;
+letter-spacing: 0%;
+text-align: center;
+width: 247px;
+height: 66px;
+}
+
+.top__button:hover{
+    color: white;
+    background-color: black;
+}
