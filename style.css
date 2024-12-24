@@ -1,58 +1,170 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+.center{
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+.top {
+  height: 800px;
+  background-color: rgb(225, 255, 143);
+  background-image: url(img/Star\ 2.svg),url(img/Star\ 3.svg),url(img/Star\ 5.svg),url(img/Star\ 4.svg),url(img/star1.svg);
+  background-repeat: no-repeat;
+  background-position: 63px 94px, 156px 69px, 948px 538px, 1013px 568px, 1200px 0px;
+  background-size: 57px 57px, 35px 35px, 37px 37px, 83px 83px, 749.55px 791.06px;
+  overflow: hidden;
 }
 
-.top{
-    height: 800px;
-    background-image: url(img/Rectangle\ 111002150.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.top__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.header__big{
+.header__strip {
+  margin-top: auto;
+  
+}
+.header__strip-color {
+  height: 90px;
+  background: rgb(188, 236, 48);
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.header__big {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 196px;
+  padding-bottom: 24px;
+
+}
+
+
+.header__small {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 64px;
+}
+
+.top__button {
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 247px;
+  height: 66px;
+}
+
+.top__button:hover {
+  color: white;
+  background-color: black;
+}
+
+.top1 {
+height: 1242px;
+background-color: black;
+display: flex;
+flex-wrap: wrap;
+gap: 32px;
+align-content: center;
+padding-left: 119px;
+padding-right: 123px;
+}
+
+
+.for__item_1{
+    width:378px;
+    height:473px;
+    gap: 0px;
+    border-radius: 30px;
+    background-color: white;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+}
+.for__item_2{
+    width:378px;
+    height:512px;
+    gap: 0px;
+    border-radius: 30px;
+    background-color: white;
+}
+.for__item_3{
+    width:378px;
+    height:473px;
+    border-radius: 30px;
+    background-color: white;
+}
+.for__item_4{
+    width:378px;
+    height:551px;
+    border-radius: 30px;
+    background-color: white;
+}
+.for__item_5{
+    width:378px;
+    height:512px;
+    border-radius: 30px;
+    background-color: white;
+}
+.for__item_6{
+    width:378px;
+    height:551px;
+    border-radius: 30px;
+    background-color: white;
+}
+.text__1{
     color: rgb(32, 32, 39);
 font-family: Montserrat;
-font-size: 64px;
-font-weight: 700;
-line-height: 78px;
+font-size: 16px;
+font-weight: 500;
+line-height: 110%;
 letter-spacing: 0px;
 text-align: left;
-padding-top: 196px;
-padding-bottom: 24px;
+border-radius: 52.58px;
+background: rgb(247, 247, 247);
+width: 108px;
+height: 36px;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+
 }
 
-.header__small{
+.text__2{
     color: rgb(32, 32, 39);
     font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
     letter-spacing: 0px;
     text-align: left;
-    padding-bottom: 64px;
-    
-}
-
-.top__button{
-    box-sizing: border-box;
-border: 1px solid rgb(32, 32, 39);
-border-radius: 60px;
-
-background: rgb(32, 32, 39);
-color: rgb(255, 255, 255);
-font-family: Montserrat;
-font-size: 24px;
-font-weight: 600;
-line-height: 141.69%;
-letter-spacing: 0%;
-text-align: center;
-width: 247px;
-height: 66px;
-}
-
-.top__button:hover{
-    color: white;
-    background-color: black;
 }
