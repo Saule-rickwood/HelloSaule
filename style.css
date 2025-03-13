@@ -8,7 +8,23 @@
   padding-right: calc(50% - 600px);
 }
 
-.menu-mob {
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mob__star {
+  display: none;
+}
+
+.mob__title {
+  display: none;
+}
+
+.menu__mob {
   display: none;
 }
 
@@ -74,7 +90,7 @@
   max-width: 768px;
 }
 
-.top__button {
+.top__button, .play-button {
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
@@ -90,13 +106,17 @@
   height: 66px;
 }
 
-.top__button:hover {
+.play-button {
+  display: none;
+}
+
+.top__button:hover, .play-button:hover {
   color: white;
   background-color: black;
 }
 
 .top1 {
-  background-color: black;
+  background-color: rgb(32, 32, 39);
   background-image: url(about_game__star1.svg), url(about_game__star2.svg);
   background-repeat: no-repeat;
   background-position: 25px 770px, 40px 822px;
@@ -138,6 +158,8 @@
 }
 
 .games__box {
+  z-index: 1;
+  position: relative;
   display: flex;
   gap: 0;
   flex-direction: row;
@@ -222,7 +244,7 @@
   background-color: white;
 }
 
-.text__1 {
+.text__game-number {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 16px;
@@ -240,7 +262,7 @@
   justify-content: center;
 }
 
-.text__2 {
+.text__description {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 32px;
@@ -263,7 +285,7 @@
 }
 
 .top__2 {
-  background-color: black;
+  background-color: #202027;
   height: 3500px;
   background-image: url(mini-game__star1.svg), url(mini-game__star2.svg), url(mini-game__star3.svg), url(mini-game__star4.svg);
   background-repeat: no-repeat;
@@ -439,7 +461,7 @@
     line-height: 20px;
     padding-bottom: 36px;
   }
-  .top__button {
+  .top__button, .play-button {
     width: 285px;
     height: 55px;
     font-size: 16px;
@@ -468,6 +490,7 @@
     background-size: 35px 35px, 19px 18px, 18px 18px, 39px 41px;
   }
   .mob__title {
+    display: block;
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 40px;
@@ -479,10 +502,14 @@
     padding-bottom: 48px;
   }
   .mob__star {
+    display: block;
     right: 0;
     top: -40.43px;
     position: absolute;
     width: 223.52px;
+  }
+  .play-button {
+    display: block;
   }
   .for__item_1 {
     width: 343px;

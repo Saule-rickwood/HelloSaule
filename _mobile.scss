@@ -50,6 +50,7 @@
   
 }
 
+
 .header__small{
     font-size: 16px;
 line-height: 20px;
@@ -91,6 +92,7 @@ font-size: 16px;
 }
 
 .mob__title{
+    display: block;
     color: rgb(255, 255, 255);
 font-family: Montserrat;
 font-size: 40px;
@@ -104,12 +106,16 @@ padding-bottom: 48px;
 
 }
 .mob__star{
+    display: block;
     right: 0;
     top: -40.43px;
     position: absolute;
     width: 223.52px;
 }
+.play-button{
+    display: block;
 
+}
 .for__item_1{
     width: 343px;
     height: 523.68px;

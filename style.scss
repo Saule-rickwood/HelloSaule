@@ -7,9 +7,21 @@
       padding-right: calc(50% - 600px);
   }
 
-  .menu-mob{
-    display: none;
+  html{
+    scroll-behavior: smooth;
   }
+ a{
+  text-decoration: none;
+ } 
+.mob__star{
+  display: none;
+}
+.mob__title{
+  display: none;
+}
+.menu__mob{
+  display: none;
+}
   
   .top {
     max-width: 1440px;
@@ -74,6 +86,7 @@
     max-width: 768px;
   }
   
+  
   .top__button {
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
@@ -90,14 +103,19 @@
     width: 247px;
     height: 66px;
   }
-  
+
+  .play-button{
+    @extend .top__button;
+    display: none; 
+  }
+
   .top__button:hover {
     color: white;
     background-color: black;
   }
   
   .top1 {
-  background-color: black;
+  background-color: rgb(32, 32, 39);;
   background-image: url(about_game__star1.svg),url(about_game__star2.svg);
     background-repeat: no-repeat;
     background-position: 25px 770px, 40px 822px;
@@ -139,6 +157,8 @@
     right: 0;
   }
   .games__box{
+    z-index: 1;
+    position: relative;
     display: flex;
     gap: 0;
     flex-direction: row;
@@ -214,7 +234,7 @@
       border-radius: 30px;
       background-color: white;
   }
-  .text__1{
+  .text__game-number{
       color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 16px;
@@ -233,7 +253,7 @@
   
   }
   
-  .text__2{
+  .text__description{
       color: rgb(32, 32, 39);
       font-family: Montserrat;
       font-size: 32px;
@@ -256,7 +276,7 @@
   }
   
   .top__2{
-    background-color: black;
+    background-color:#202027;
     height: 3500px;
     background-image: url(mini-game__star1.svg),url(mini-game__star2.svg),url(mini-game__star3.svg),url(mini-game__star4.svg);
     background-repeat: no-repeat;
@@ -398,5 +418,5 @@
   2. Подключить JS done
   3. Сделать мобильную версию сайта - посмотреть адаптивный дизайн
   4. Посмотреть методологию БЭМ
-  5. Сделать домашние задания в отдельной папке по переменным
-  6. Сделать комит и сдать через ссылку на пул реквест домашнее задание */
+  5. Сделать домашние задания в отдельной папке по переменным done
+  6. Сделать комит и сдать через ссылку на пул реквест домашнее задание done */
