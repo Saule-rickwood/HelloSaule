@@ -1,0 +1,174 @@
+@media (max-width: 767px){
+.center{
+
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.top{
+    background-image: none;
+    height: 649px;
+}
+.big__star{
+    display: none;
+}
+
+.about__game_big__star{
+    display: none;
+}
+
+.top1{
+    background-image: none;
+}
+
+.top__2{
+    display: none;
+}
+.top2__text{
+    display: none;
+}
+.top2__title{
+    display: none;
+}
+.about__game{
+    display: none;
+}
+.games__box{
+    gap: 24px;
+}
+.for__game_1{
+    gap: 24px;
+}
+
+.for__game_1{
+    gap: 24px;
+}
+.header__big {
+    padding-top: 147px;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  
+}
+
+
+.header__small{
+    font-size: 16px;
+line-height: 20px;
+text-align: center;
+line-height: 20px;
+padding-bottom: 36px;
+}
+
+.top__button{
+    width: 285px;
+height: 55px;
+font-size: 16px;
+}
+.top__button-box{
+    text-align: center;
+} 
+.header__strip-color {
+    height: 51.34px;
+    padding-left: 17px;
+}
+.text__strip{
+    height: 19.34px;
+}
+
+.title-box__mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 245px;
+}
+
+.image__mob{
+    background-image: url(img__mob/Star\ 1.svg), url(img__mob/Star\ 2.svg), url(img__mob/Star\ 3.svg),url(img__mob/Star\ 4.svg);
+    background-repeat: no-repeat;
+    background-position: 37px 97px, 91px 64px,  272px 557px, 303px 580px;
+    background-size: 35px 35px, 19px 18px, 18px 18px, 39px 41px;
+
+}
+
+.mob__title{
+    display: block;
+    color: rgb(255, 255, 255);
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0px;
+text-align: left;
+padding-top: 53px;
+padding-bottom: 48px;
+
+
+}
+.mob__star{
+    display: block;
+    right: 0;
+    top: -40.43px;
+    position: absolute;
+    width: 223.52px;
+}
+.play-button{
+    display: block;
+
+}
+.for__item_1{
+    width: 343px;
+    height: 523.68px;
+
+}
+
+
+.for__item_2{
+    width: 343px;
+    height: 523.68px;
+
+}
+
+
+.for__item_3{
+    width: 343px;
+    height: 523.68px;
+
+}
+
+
+.for__item_4{
+    width: 343px;
+    height: 523.68px;
+
+}
+
+
+.for__item_5{
+    width: 343px;
+    height: 523.68px;
+
+}
+
+
+.for__item_6{
+    width: 343px;
+    height: 523.68px;
+
+}
+.img-mob{
+    width: 343px;
+    height: 284.93px;
+}
+
+.footer{
+    height: 100px;
+}
+
+.footer__text{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+}
