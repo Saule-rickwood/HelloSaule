@@ -114,7 +114,7 @@
     background-color: black;
   }
   
-  .top1 {
+  .about {
   background-color: rgb(32, 32, 39);;
   background-image: url(about_game__star1.svg),url(about_game__star2.svg);
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@
     height: 96px;
     margin-top: 24px;
   }
-  .top2__title{
+  .title{
     color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 64px;
@@ -165,7 +165,7 @@
     flex-wrap: wrap;
     align-content: space-around;
   }
-  .for__game_1{
+  .games__game_guess-number {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -174,7 +174,7 @@
     align-content: flex-start;
   }
   
-  .for__game_2{
+  .games__game_rock{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -184,15 +184,23 @@
     padding-bottom: 50px;
   }
   
-  .top2__text{
+  .about__text{
     padding-bottom: 78px;
   }
-  .for__item_1{
+  .games__item {
       width:378px;
       height:473px;
       gap: 0px;
       border-radius: 30px;
       background-color: white;
+  }
+
+  .games__item_big {
+    height:512px;
+  }
+
+  .games__item_large{
+    height: 551px;
   }
   .text{
       display: flex;
@@ -203,37 +211,7 @@
       padding-right: 32px;
       padding-bottom: 36px;
   }
-  .for__item_2{
-      width:378px;
-      height:512px;
-      gap: 0px;
-      border-radius: 30px;
-      background-color: white;
-  }
-  .for__item_3{
-      width:378px;
-      height:473px;
-      border-radius: 30px;
-      background-color: white;
-  }
-  .for__item_4{
-      width:378px;
-      height:551px;
-      border-radius: 30px;
-      background-color: white;
-  }
-  .for__item_5{
-      width:378px;
-      height:512px;
-      border-radius: 30px;
-      background-color: white;
-  }
-  .for__item_6{
-      width:378px;
-      height:551px;
-      border-radius: 30px;
-      background-color: white;
-  }
+
   .text__game-number{
       color: rgb(32, 32, 39);
   font-family: Montserrat;
@@ -275,7 +253,7 @@
   padding-bottom: 72px;
   }
   
-  .top__2{
+  .mini-games {
     background-color:#202027;
     height: 3500px;
     background-image: url(mini-game__star1.svg),url(mini-game__star2.svg),url(mini-game__star3.svg),url(mini-game__star4.svg);
@@ -283,10 +261,15 @@
     background-position: 1277px 93px, 1320px 126px, 1319px 3366px, 1249px 3414px;
     background-size: 35.15px 35.15px, 68.86px 68.86px, 69px 69px, 41px 41px;
     
+    &__title {
+      margin-bottom: 72px;
+    }
   }
+
+
   
   
-  .text__title{
+  .game__title{
     color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 48px;
@@ -297,7 +280,7 @@
   padding-bottom:  24px;
   }
   
-  .text__game{
+  .game__description {
     color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 24px;
@@ -308,7 +291,7 @@
   padding-bottom: 36px;
   }
   
-  .play__button{
+  .game__button{
     width: 247px;
   height: 66px;
     border-radius: 60px;
@@ -322,7 +305,7 @@
   text-align: center;
   }
   
-  .for__mini-game_1{
+  .mini-games__game{
    
     
       border-radius: 30px;
@@ -332,51 +315,8 @@
       gap: 48px;
   }
   
-  .for__mini-game_2{
-   
-    
-    border-radius: 30px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-  }
-  .for__mini-game_3{
-   
-    
-    border-radius: 30px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-  }
-  .for__mini-game_4{
-   
-    
-    border-radius: 30px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-  }
-  .for__mini-game_5{
-   
-    
-    border-radius: 30px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-  }
-  .for__mini-game_6{
-    border-radius: 30px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-  }
   
-  .mini__game_box{
+  .mini-games__box{
     width: 1200px;
     height: 3500px;
     display: flex;
@@ -385,7 +325,7 @@
     gap: 32px;
   }
   
-  .mini-game__text{
+  .game__text{
     display: flex;
     flex-direction: column;
     padding-left: 48px;

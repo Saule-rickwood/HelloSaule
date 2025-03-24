@@ -11,8 +11,25 @@
 .big__star{
     display: none;
 }
-
+.game{
+    flex-direction: column;
+}
 .about__game_big__star{
+    display: none;
+}
+.game__text{
+    order: 2;
+    padding-top: 0;
+}
+
+.game__title{
+    font-size: 32px;
+    line-height: 39px;
+}
+.game__description{
+    font-size: 16px;
+}
+.about__text {
     display: none;
 }
 
@@ -20,7 +37,7 @@
     background-image: none;
 }
 
-.top__2{
+.about{
     display: none;
 }
 .top2__text{
@@ -116,49 +133,16 @@ padding-bottom: 48px;
     display: block;
 
 }
-.for__item_1{
+.mini-games__game{
     width: 343px;
-    height: 523.68px;
+    height: 606px;
+    gap: 8px;
 
 }
-
-
-.for__item_2{
-    width: 343px;
-    height: 523.68px;
-
-}
-
-
-.for__item_3{
-    width: 343px;
-    height: 523.68px;
-
-}
-
-
-.for__item_4{
-    width: 343px;
-    height: 523.68px;
-
-}
-
-
-.for__item_5{
-    width: 343px;
-    height: 523.68px;
-
-}
-
-
-.for__item_6{
-    width: 343px;
-    height: 523.68px;
-
-}
-.img-mob{
+.img-mob {
     width: 343px;
     height: 284.93px;
+    order: 1;
 }
 
 .footer{
