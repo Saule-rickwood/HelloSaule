@@ -115,7 +115,7 @@ a {
   background-color: black;
 }
 
-.top1 {
+.about {
   background-color: rgb(32, 32, 39);
   background-image: url(about_game__star1.svg), url(about_game__star2.svg);
   background-repeat: no-repeat;
@@ -129,7 +129,7 @@ a {
   margin-top: 24px;
 }
 
-.top2__title {
+.title {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 64px;
@@ -167,7 +167,7 @@ a {
   align-content: space-around;
 }
 
-.for__game_1 {
+.games__game_guess-number {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -176,7 +176,7 @@ a {
   align-content: flex-start;
 }
 
-.for__game_2 {
+.games__game_rock {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -186,16 +186,24 @@ a {
   padding-bottom: 50px;
 }
 
-.top2__text {
+.about__text {
   padding-bottom: 78px;
 }
 
-.for__item_1 {
+.games__item {
   width: 378px;
   height: 473px;
   gap: 0px;
   border-radius: 30px;
   background-color: white;
+}
+
+.games__item_big {
+  height: 512px;
+}
+
+.games__item_large {
+  height: 551px;
 }
 
 .text {
@@ -206,42 +214,6 @@ a {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 36px;
-}
-
-.for__item_2 {
-  width: 378px;
-  height: 512px;
-  gap: 0px;
-  border-radius: 30px;
-  background-color: white;
-}
-
-.for__item_3 {
-  width: 378px;
-  height: 473px;
-  border-radius: 30px;
-  background-color: white;
-}
-
-.for__item_4 {
-  width: 378px;
-  height: 551px;
-  border-radius: 30px;
-  background-color: white;
-}
-
-.for__item_5 {
-  width: 378px;
-  height: 512px;
-  border-radius: 30px;
-  background-color: white;
-}
-
-.for__item_6 {
-  width: 378px;
-  height: 551px;
-  border-radius: 30px;
-  background-color: white;
 }
 
 .text__game-number {
@@ -284,7 +256,7 @@ a {
   padding-bottom: 72px;
 }
 
-.top__2 {
+.mini-games {
   background-color: #202027;
   height: 3500px;
   background-image: url(mini-game__star1.svg), url(mini-game__star2.svg), url(mini-game__star3.svg), url(mini-game__star4.svg);
@@ -292,8 +264,11 @@ a {
   background-position: 1277px 93px, 1320px 126px, 1319px 3366px, 1249px 3414px;
   background-size: 35.15px 35.15px, 68.86px 68.86px, 69px 69px, 41px 41px;
 }
+.mini-games__title {
+  margin-bottom: 72px;
+}
 
-.text__title {
+.game__title {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 48px;
@@ -304,7 +279,7 @@ a {
   padding-bottom: 24px;
 }
 
-.text__game {
+.game__description {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 24px;
@@ -315,7 +290,7 @@ a {
   padding-bottom: 36px;
 }
 
-.play__button {
+.game__button {
   width: 247px;
   height: 66px;
   border-radius: 60px;
@@ -329,64 +304,21 @@ a {
   text-align: center;
 }
 
-.for__mini-game_1 {
+.mini-games__game {
   border-radius: 30px;
   background-color: white;
   display: flex;
-  flex-direction: row;
-  gap: 48px;
 }
 
-.for__mini-game_2 {
-  border-radius: 30px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  gap: 48px;
-}
-
-.for__mini-game_3 {
-  border-radius: 30px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  gap: 48px;
-}
-
-.for__mini-game_4 {
-  border-radius: 30px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  gap: 48px;
-}
-
-.for__mini-game_5 {
-  border-radius: 30px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  gap: 48px;
-}
-
-.for__mini-game_6 {
-  border-radius: 30px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  gap: 48px;
-}
-
-.mini__game_box {
+.mini-games__box {
   width: 1200px;
   height: 3500px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 32px;
 }
 
-.mini-game__text {
+.game__text {
   display: flex;
   flex-direction: column;
   padding-left: 48px;
@@ -421,13 +353,53 @@ a {
   .big__star {
     display: none;
   }
+  .game {
+    flex-direction: column;
+  }
   .about__game_big__star {
     display: none;
+  }
+  .game__text {
+    order: 2;
+  }
+  .game__text-guess {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-simple {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-turn {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-quiz {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-rock {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-shuffle {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__title {
+    font-size: 32px;
+    line-height: 39px;
+    padding-bottom: 0;
+  }
+  .game__description {
+    font-size: 16px;
+    padding-bottom: 0;
+  }
+  .about__text {
+    display: none;
+  }
+  .game__button {
+    width: 285px;
+    height: 55px;
   }
   .top1 {
     background-image: none;
   }
-  .top__2 {
+  .about {
     display: none;
   }
   .top2__text {
@@ -476,6 +448,16 @@ a {
   .text__strip {
     height: 19.34px;
   }
+  .title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 53px;
+  }
   .title-box__mob {
     display: flex;
     flex-direction: column;
@@ -511,33 +493,17 @@ a {
   .play-button {
     display: block;
   }
-  .for__item_1 {
-    width: 343px;
-    height: 523.68px;
+  .mini-games {
+    height: 3740px;
   }
-  .for__item_2 {
+  .mini-games__game {
     width: 343px;
-    height: 523.68px;
-  }
-  .for__item_3 {
-    width: 343px;
-    height: 523.68px;
-  }
-  .for__item_4 {
-    width: 343px;
-    height: 523.68px;
-  }
-  .for__item_5 {
-    width: 343px;
-    height: 523.68px;
-  }
-  .for__item_6 {
-    width: 343px;
-    height: 523.68px;
+    height: 606px;
   }
   .img-mob {
     width: 343px;
     height: 284.93px;
+    order: 1;
   }
   .footer {
     height: 100px;

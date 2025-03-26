@@ -11,16 +11,64 @@
 .big__star{
     display: none;
 }
-
+.game{
+    flex-direction: column;
+}
 .about__game_big__star{
     display: none;
+}
+.game__text{
+
+    order: 2;
+}
+
+.game__text-guess{
+    padding: 29.04px 29.04px 32.67px 29.04px;
+}
+.game__text-simple{
+    padding: 29.04px 29.04px 32.67px 29.04px;
+}
+.game__text-turn {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+}
+.game__text-quiz {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+}
+.game__text-rock {
+padding: 29.04px 29.04px 32.67px 29.04px;
+
+}
+
+.game__text-shuffle{
+ 
+    padding: 29.04px 29.04px 32.67px 29.04px;
+}
+
+
+
+.game__title{
+    font-size: 32px;
+    line-height: 39px;
+    padding-bottom: 0;
+}
+.game__description{
+    font-size: 16px;
+    padding-bottom: 0;
+}
+.about__text {
+    display: none;
+}
+
+.game__button {
+    width: 285px;
+height: 55px;
 }
 
 .top1{
     background-image: none;
 }
 
-.top__2{
+.about{
     display: none;
 }
 .top2__text{
@@ -60,7 +108,7 @@ padding-bottom: 36px;
 }
 
 .top__button{
-    width: 285px;
+width: 285px;
 height: 55px;
 font-size: 16px;
 }
@@ -73,6 +121,17 @@ font-size: 16px;
 }
 .text__strip{
     height: 19.34px;
+}
+
+.title{
+    color: rgb(255, 255, 255);
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0px;
+text-align: left;
+padding-top: 53px;
 }
 
 .title-box__mob{
@@ -116,49 +175,22 @@ padding-bottom: 48px;
     display: block;
 
 }
-.for__item_1{
+.mini-games {
+    height: 3740px;
+}
+
+.mini-games__game{
     width: 343px;
-    height: 523.68px;
+    height: 606px;
+ 
 
 }
 
-
-.for__item_2{
-    width: 343px;
-    height: 523.68px;
-
-}
-
-
-.for__item_3{
-    width: 343px;
-    height: 523.68px;
-
-}
-
-
-.for__item_4{
-    width: 343px;
-    height: 523.68px;
-
-}
-
-
-.for__item_5{
-    width: 343px;
-    height: 523.68px;
-
-}
-
-
-.for__item_6{
-    width: 343px;
-    height: 523.68px;
-
-}
-.img-mob{
+ 
+.img-mob {
     width: 343px;
     height: 284.93px;
+    order: 1;
 }
 
 .footer{
