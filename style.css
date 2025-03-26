@@ -308,8 +308,6 @@ a {
   border-radius: 30px;
   background-color: white;
   display: flex;
-  flex-direction: row;
-  gap: 48px;
 }
 
 .mini-games__box {
@@ -317,7 +315,6 @@ a {
   height: 3500px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 32px;
 }
 
@@ -364,17 +361,40 @@ a {
   }
   .game__text {
     order: 2;
-    padding-top: 0;
+  }
+  .game__text-guess {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-simple {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-turn {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-quiz {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-rock {
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__text-shuffle {
+    padding: 29.04px 29.04px 32.67px 29.04px;
   }
   .game__title {
     font-size: 32px;
     line-height: 39px;
+    padding-bottom: 0;
   }
   .game__description {
     font-size: 16px;
+    padding-bottom: 0;
   }
   .about__text {
     display: none;
+  }
+  .game__button {
+    width: 285px;
+    height: 55px;
   }
   .top1 {
     background-image: none;
@@ -428,6 +448,16 @@ a {
   .text__strip {
     height: 19.34px;
   }
+  .title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 53px;
+  }
   .title-box__mob {
     display: flex;
     flex-direction: column;
@@ -463,10 +493,12 @@ a {
   .play-button {
     display: block;
   }
+  .mini-games {
+    height: 3740px;
+  }
   .mini-games__game {
     width: 343px;
     height: 606px;
-    gap: 8px;
   }
   .img-mob {
     width: 343px;

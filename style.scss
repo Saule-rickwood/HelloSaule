@@ -306,13 +306,11 @@
   }
   
   .mini-games__game{
-   
-    
       border-radius: 30px;
       background-color: white;
       display: flex;
-      flex-direction: row;
-      gap: 48px;
+
+      
   }
   
   
@@ -321,7 +319,7 @@
     height: 3500px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+  
     gap: 32px;
   }
   
