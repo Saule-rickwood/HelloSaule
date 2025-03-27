@@ -311,7 +311,6 @@ a {
 }
 
 .mini-games__box {
-  width: 1200px;
   height: 3500px;
   display: flex;
   flex-direction: column;
@@ -425,6 +424,7 @@ a {
     font-size: 40px;
     line-height: 49px;
     text-align: center;
+    padding-bottom: 0;
   }
   .header__small {
     font-size: 16px;
@@ -459,10 +459,6 @@ a {
     padding-top: 53px;
   }
   .title-box__mob {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     height: 245px;
   }
   .image__mob {
