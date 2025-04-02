@@ -94,7 +94,7 @@ a {
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
-  background: rgb(32, 32, 39);
+  background-color: black;
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 24px;
@@ -104,6 +104,11 @@ a {
   text-align: center;
   width: 247px;
   height: 66px;
+}
+
+.top__button:hover, .play-button:hover {
+  color: black;
+  background-color: transparent;
 }
 
 .play-button {
@@ -302,6 +307,11 @@ a {
   line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
+}
+
+.game__button:hover {
+  color: black;
+  background-color: transparent;
 }
 
 .mini-games__game {
