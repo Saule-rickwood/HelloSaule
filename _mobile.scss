@@ -1,4 +1,4 @@
-@media (max-width: 767px){
+@media (max-width: 768px){
 .center{
 
     padding-left: 16px;
@@ -20,6 +20,7 @@
 .game__text{
 
     order: 2;
+    gap: 16px;
 }
 
 .game__text-guess{
@@ -44,6 +45,10 @@ padding: 29.04px 29.04px 32.67px 29.04px;
     padding: 29.04px 29.04px 32.67px 29.04px;
 }
 
+.title__text-welcome{
+    margin: 0 auto;
+    width: 262px;
+}
 
 
 .game__title{
@@ -109,6 +114,7 @@ padding-bottom: 36px;
 }
 
 .top__button-box{
+    align-self: center;
     text-align: center;
 width: 285px;
 height: 55px;
@@ -173,7 +179,10 @@ padding-bottom: 48px;
 
 }
 .mini-games {
-    height: 3740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .mini-games__game{

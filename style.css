@@ -364,13 +364,10 @@ a {
   animation: move 2s linear infinite;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
   .center {
     padding-left: calc(50% - 300px);
     padding-right: calc(50% - 300px);
-  }
-  .top__button-box {
-    display: none;
   }
   .big__star {
     width: 450px;
@@ -411,7 +408,7 @@ a {
     padding-bottom: 36px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -431,6 +428,7 @@ a {
   }
   .game__text {
     order: 2;
+    gap: 16px;
   }
   .game__text-guess {
     padding: 29.04px 29.04px 32.67px 29.04px;
@@ -449,6 +447,10 @@ a {
   }
   .game__text-shuffle {
     padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .title__text-welcome {
+    margin: 0 auto;
+    width: 262px;
   }
   .game__title {
     font-size: 32px;
@@ -504,7 +506,8 @@ a {
     line-height: 20px;
     padding-bottom: 36px;
   }
-  .top__button, .play-button {
+  .top__button-box {
+    align-self: center;
     text-align: center;
     width: 285px;
     height: 55px;
@@ -559,7 +562,10 @@ a {
     display: block;
   }
   .mini-games {
-    height: 3740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .mini-games__game {
     width: 343px;

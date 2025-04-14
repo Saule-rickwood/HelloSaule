@@ -1,15 +1,21 @@
-document.getElementById('play-button').addEventListener('click',
-    function gameOne() {
-        let randomNumber = +prompt('Угадай число');
-        if (randomNumber < 0) {
-            alert('число не может быть отрицательным');
-        } else if (randomNumber >= 0 && randomNumber <= 100) {
-            alert('молодец,угадал!')
-        } else if (randomNumber > 100) {
-            alert('число не может быть больше 100!');
+
+function gameOne() {
+    const randomNumber = Math.floor(Math.random() * 100 + 1);
+    console.log(randomNumber);
+    let userInput;
+    while (userInput !== randomNumber) {
+        userInput = prompt('Угадай число от 1 до 100');
+        if (!userInput) return alert('Игра отменена!')
+        if (userInput < randomNumber) {
+            alert('Не угадал. Попробуй больше!');
+        } else if (userInput > randomNumber) {
+            alert('Не угадал. Попробуй меньше!')
+        } else if (userInput === randomNumber) {
+            alert('Молодец, угадал');
         } else {
             alert('Вы ввели неправильное значениие!');
-        }
-
-        console.log('Кнопка "Играть" нажата!');
-    });
+        }   
+    }  
+    
+    console.log('Кнопка "Играть" нажата!');
+};
