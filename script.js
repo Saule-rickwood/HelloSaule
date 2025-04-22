@@ -90,3 +90,53 @@ function simpleArithmetics() {
   }
   console.log(operator, firstNumber, secondNumber);
 }
+
+
+function reverseText(){
+  let input = prompt('Введите текст:');
+  let reversedText = '';
+  if (!input ) {
+    alert('Игра отменена!');
+    return 
+  }
+
+  reversedText = input.split('').reverse().join('');
+  alert(reversedText);
+  console.log(reversedText);
+  
+}
+
+
+
+function quiz() {
+  const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+      correctAnswer: 2 // номер правильного ответа
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
+  let correctAnswers = 0;
+  
+  for (const item of quiz) {
+    const userAnswer = prompt(item.question + '\n' + item.options.join(' '));
+    if (!userAnswer) {
+      alert('Игра отменена!');
+      return
+    }
+    if (+userAnswer === item.correctAnswer) {
+      correctAnswers += 1;
+    }
+  }
+ alert(`Вы правильно ответили на ${correctAnswers} вопроса!`) 
+}
