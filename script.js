@@ -113,7 +113,7 @@ function quiz() {
     {
         question: "Какой цвет небо?",
         options: ["1. Красный", "2. Синий", "3. Зеленый"],
-      correctAnswer: 2 // номер правильного ответа
+      correctAnswer: 2 
     },
     {
         question: "Сколько дней в неделе?",
@@ -148,8 +148,7 @@ function rockScissorsPaper() {
   const compAnswer = options[Math.floor(Math.random() * options.length)];
   if (!userAnswer) {
     alert('Игра отменена!')
-    return
-    
+    return 
   }
   if (userAnswer.toLowerCase() === compAnswer.toLowerCase()) {
     alert('Ничья');
