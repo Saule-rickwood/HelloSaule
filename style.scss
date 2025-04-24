@@ -60,6 +60,9 @@
     overflow: hidden;
   }
   .header__big {
+
+   position: relative;
+    z-index: 1;
     color: rgb(32, 32, 39);
     font-family: Montserrat;
     font-size: 64px;
@@ -75,6 +78,7 @@
   
   
   .header__small {
+    z-index: 1;
     color: rgb(32, 32, 39);
     font-family: Montserrat;
     font-size: 24px;
@@ -87,12 +91,14 @@
   }
   
   
-  .top__button {
+  .top__button-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
-  
-    background: rgb(32, 32, 39);
+    background-color: black;
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 24px;
@@ -104,15 +110,19 @@
     height: 66px;
   }
 
+  .top__button-box:hover{
+    color: black;
+    background-color: transparent;
+      }
+
+  
+
   .play-button{
-    @extend .top__button;
+
     display: none; 
   }
 
-  .top__button:hover {
-    color: white;
-    background-color: black;
-  }
+
   
   .about {
   background-color: rgb(32, 32, 39);;
@@ -254,12 +264,13 @@
   }
   
   .mini-games {
+  
     background-color:#202027;
-    height: 3500px;
     background-image: url(mini-game__star1.svg),url(mini-game__star2.svg),url(mini-game__star3.svg),url(mini-game__star4.svg);
     background-repeat: no-repeat;
     background-position: 1277px 93px, 1320px 126px, 1319px 3366px, 1249px 3414px;
     background-size: 35.15px 35.15px, 68.86px 68.86px, 69px 69px, 41px 41px;
+    padding-bottom: 144px;
     
     &__title {
       margin-bottom: 72px;
@@ -304,6 +315,11 @@
   letter-spacing: 0%;
   text-align: center;
   }
+
+  .game__button:hover{
+color: black;
+background-color: transparent;
+  }
   
   .mini-games__game{
       border-radius: 30px;
@@ -316,7 +332,6 @@
   
   .mini-games__box{
    
-    height: 3500px;
     display: flex;
     flex-direction: column;
   
@@ -345,16 +360,17 @@
   text-align: center;
   padding-top: 61px;
   }
+
+  @keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+  }
+  
+  .animated-bar {
+    width: 100px;
+    height: 20px;
+    animation: move 2s linear infinite;
+  }
  
-   
-@import 'mobile'
-
-
-
-
-  /*  1. Установаить style scss препроцессоры done
-  2. Подключить JS done
-  3. Сделать мобильную версию сайта - посмотреть адаптивный дизайн
-  4. Посмотреть методологию БЭМ
-  5. Сделать домашние задания в отдельной папке по переменным done
-  6. Сделать комит и сдать через ссылку на пул реквест домашнее задание done */
+@import 'tablet';  
+@import 'mobile';

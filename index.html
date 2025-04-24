@@ -18,8 +18,8 @@
             <h1 class="header__big">
               <div class="title-box__mob">
                 
-                <div class="title__text_welcome">Добро пожаловать</div>
-                <div class="title__text_site">на мой сайт мини-игр</div>
+                <div class="title__text-welcome">Добро пожаловать на мой сайт мини-игр</div>
+               
               </div>
             </h1>
 
@@ -29,17 +29,20 @@
               нажимай <b>«Поехали!»</b> и <b>приступай.</b> <br />
             </p>
             <a class="top__button-box" href="#top1"
-              ><button class="top__button">Поехали!</button></a
+               >Поехали!</a
             >
           </section>
         </div>
         <section class="header__strip">
           <div class="header__strip-color">
-            <img
+            <div class="animated-bar ">
+              <img
               class="text__strip"
               src="img/text_strip.svg"
               alt="text strip"
             />
+            </div>
+           
           </div>
         </section>
       </div>
@@ -69,7 +72,7 @@
                 <div class="text">
                   <p class="text__game-number">Игра № 1</p>
                   <p class="text__description">Угадай число</p>
-                  <button onclick="gameOne" class="play-button">Играть!</button>
+                  <button class="play-button">Играть!</button>
                 </div>
               </div>
             </a>
@@ -139,7 +142,7 @@
                 <p class="game__description">
                   Попробуй угадать случайное число от 1 до 100.
                 </p>
-                <button class="game__button">Играть!</button>
+                <button onclick="guessNumber()" class="game__button">Играть!</button>
               </div>
               <img class="img-mob" src="for__game_1.png" alt="for game 1" />
             </div>
@@ -151,7 +154,7 @@
                 <p class="game__description">
                   Попробуй решить простые арифметические задачи.
                 </p>
-                <button class="game__button">Играть!</button>
+                <button onclick="simpleArithmetics()" class="game__button">Играть!</button>
               </div>
             </div>
             <div id="turn" class="mini-games__game game">
@@ -160,7 +163,7 @@
                 <p class="game__description">
                   Попробуй ввести текст, который будет перевернут.
                 </p>
-                <button class="game__button">Играть!</button>
+                <button onclick="reverseText()" class="game__button">Играть!</button>
               </div>
               <img class="img-mob" src="for__game_3.png" alt="for game 3" />
             </div>
@@ -171,7 +174,7 @@
                 <p class="game__description">
                   Отвечай на вопросы викториныс вариантами ответов.
                 </p>
-                <button class="game__button">Играть!</button>
+                <button onclick="quiz()" class="game__button">Играть!</button>
               </div>
             </div>
             <div id="rock" class="mini-games__game game">
@@ -180,7 +183,7 @@
                 <p class="game__description">
                   Сыграй в популярную игру против компьютера.
                 </p>
-                <button class="game__button">Играть!</button>
+                <button onclick="rockScissorsPaper()" class="game__button">Играть!</button>
               </div>
               <img class="img-mob" src="for__game_5.png" alt="for game 5" />
             </div>
