@@ -182,3 +182,13 @@ function rockScissorsPaper() {
   console.log(compAnswer);
 }
 
+function randomColorGenerator() {
+  const colorSymbols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+  let colorStr = '';
+  for (let i = 0; i < 6; i++){
+    const randomIndex = Math.floor(Math.random() * colorSymbols.length) 
+    const randomSymbol = colorSymbols[randomIndex]   
+    colorStr += randomSymbol;
+  }
+  document.querySelector('.mini-games').style.backgroundColor = '#' + colorStr;
+}
