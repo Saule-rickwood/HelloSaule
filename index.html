@@ -15,34 +15,25 @@
       <div class="header__main">
         <div class="top image__mob center">
           <section class="top__content">
-            <h1 class="header__big">
-              <div class="title-box__mob">
-                
-                <div class="title__text-welcome">Добро пожаловать на мой сайт мини-игр</div>
-               
-              </div>
-            </h1>
+            <h1 class="header__big">Добро пожаловать на мой сайт мини-игр</h1>
 
             <img class="big__star" src="img/star1.svg" alt="big star" />
             <p class="header__small">
               Тебе предстоит пройти несколько увлекательных игр. Если готов,
               нажимай <b>«Поехали!»</b> и <b>приступай.</b> <br />
             </p>
-            <a class="top__button-box" href="#top1"
-               >Поехали!</a
-            >
+            <a class="top__button-box" href="#top1">Поехали!</a>
           </section>
         </div>
         <section class="header__strip">
           <div class="header__strip-color">
-            <div class="animated-bar ">
+            <div class="animated-bar">
               <img
-              class="text__strip"
-              src="img/text_strip.svg"
-              alt="text strip"
-            />
+                class="text__strip"
+                src="img/text_strip.svg"
+                alt="text strip"
+              />
             </div>
-           
           </div>
         </section>
       </div>
@@ -51,7 +42,7 @@
     <section id="top1" class="about center">
       <img
         class="about__game_big__star"
-        src="about game__big star.svg"
+        src="about%20game__big star.svg"
         alt="big star"
       />
       <div class="about__game_block">
@@ -98,7 +89,7 @@
 
           <div class="games__game_rock">
             <a href="#rock">
-              <div class="games__item games__item_large ">
+              <div class="games__item games__item_large">
                 <img class="img-mob" src="for__item_4.png" alt="for item 4" />
                 <div class="text">
                   <p class="text__game-number">Игра №4</p>
@@ -107,7 +98,7 @@
               </div>
             </a>
             <a href="#quiz">
-              <div class="games__item games__item_big ">
+              <div class="games__item games__item_big">
                 <img class="img-mob" src="for__item_5.png" alt="for item 5" />
                 <div class="text">
                   <p class="text__game-number">Игра №5</p>
@@ -132,74 +123,81 @@
       <img class="mob__star" src="img__mob/mob_star.svg" alt="mob__star" />
     </div>
     <section class="mini-games center">
-     
-            <h2 class="title mini-games__title">Мини-игры</h2>
+      <h2 class="title mini-games__title">Мини-игры</h2>
 
-          <div class="mini-games__box">
-            <div id="guess" class="mini-games__game game">
-              <div class="game__text game__text-guess">
-                <p class="game__title">Угадай число</p>
-                <p class="game__description">
-                  Попробуй угадать случайное число от 1 до 100.
-                </p>
-                <button onclick="guessNumber()" class="game__button">Играть!</button>
-              </div>
-              <img class="img-mob" src="for__game_1.png" alt="for game 1" />
-            </div>
-
-            <div id="simple" class="mini-games__game game">
-              <img class="img-mob" src="for_game_2.png" alt="for game 2" />
-              <div class="game__text game__text-simple">
-                <p class="game__title">Простая арифметика</p>
-                <p class="game__description">
-                  Попробуй решить простые арифметические задачи.
-                </p>
-                <button onclick="simpleArithmetics()" class="game__button">Играть!</button>
-              </div>
-            </div>
-            <div id="turn" class="mini-games__game game">
-              <div class="game__text game__text-turn">
-                <p class="game__title">Переверни текст</p>
-                <p class="game__description">
-                  Попробуй ввести текст, который будет перевернут.
-                </p>
-                <button onclick="reverseText()" class="game__button">Играть!</button>
-              </div>
-              <img class="img-mob" src="for__game_3.png" alt="for game 3" />
-            </div>
-            <div id="quiz" class="mini-games__game game">
-              <img class="img-mob" src="for__game_4.png" alt="for game 4" />
-              <div class="game__text game__text-quiz">
-                <p class="game__title">Викторина</p>
-                <p class="game__description">
-                  Отвечай на вопросы викториныс вариантами ответов.
-                </p>
-                <button onclick="quiz()" class="game__button">Играть!</button>
-              </div>
-            </div>
-            <div id="rock" class="mini-games__game game">
-              <div class="game__text game__text-rock">
-                <p class="game__title">Камень, ножницы, бумага</p>
-                <p class="game__description">
-                  Сыграй в популярную игру против компьютера.
-                </p>
-                <button onclick="rockScissorsPaper()" class="game__button">Играть!</button>
-              </div>
-              <img class="img-mob" src="for__game_5.png" alt="for game 5" />
-            </div>
-            <div id="shuffle" class="mini-games__game game">
-              <img class="img-mob" src="for__game_6.png" alt="for game 6" />
-              <div class="game__text game__text-shuffle">
-                <p class="game__title">Генератор случайных цветов</p>
-                <p class="game__description">
-                  Игра, в которой при клике на кнопку фон страницы меняется на
-                  случайный.
-                </p>
-                <button class="game__button">Играть!</button>
-              </div>
-            </div>
+      <div class="mini-games__box">
+        <div id="guess" class="mini-games__game game">
+          <div class="game__text game__text-guess">
+            <p class="game__title">Угадай число</p>
+            <p class="game__description">
+              Попробуй угадать случайное число от 1 до 100.
+            </p>
+            <button onclick="guessNumber()" class="game__button">
+              Играть!
+            </button>
           </div>
-       
+          <img class="img-mob" src="for__game_1.png" alt="for game 1" />
+        </div>
+
+        <div id="simple" class="mini-games__game game">
+          <img class="img-mob" src="for_game_2.png" alt="for game 2" />
+          <div class="game__text game__text-simple">
+            <p class="game__title">Простая арифметика</p>
+            <p class="game__description">
+              Попробуй решить простые арифметические задачи.
+            </p>
+            <button onclick="simpleArithmetics()" class="game__button">
+              Играть!
+            </button>
+          </div>
+        </div>
+        <div id="turn" class="mini-games__game game">
+          <div class="game__text game__text-turn">
+            <p class="game__title">Переверни текст</p>
+            <p class="game__description">
+              Попробуй ввести текст, который будет перевернут.
+            </p>
+            <button onclick="reverseText()" class="game__button">
+              Играть!
+            </button>
+          </div>
+          <img class="img-mob" src="for__game_3.png" alt="for game 3" />
+        </div>
+        <div id="quiz" class="mini-games__game game">
+          <img class="img-mob" src="for__game_4.png" alt="for game 4" />
+          <div class="game__text game__text-quiz">
+            <p class="game__title">Викторина</p>
+            <p class="game__description">
+              Отвечай на вопросы викториныс вариантами ответов.
+            </p>
+            <button onclick="quiz()" class="game__button">Играть!</button>
+          </div>
+        </div>
+        <div id="rock" class="mini-games__game game">
+          <div class="game__text game__text-rock">
+            <p class="game__title">Камень, ножницы, бумага</p>
+            <p class="game__description">
+              Сыграй в популярную игру против компьютера.
+            </p>
+            <button onclick="rockScissorsPaper()" class="game__button">
+              Играть!
+            </button>
+          </div>
+          <img class="img-mob" src="for__game_5.png" alt="for game 5" />
+        </div>
+        <div id="shuffle" class="mini-games__game game">
+          <img class="img-mob" src="for__game_6.png" alt="for game 6" />
+          <div class="game__text game__text-shuffle">
+            <p class="game__title">Генератор случайных цветов</p>
+            <p class="game__description">
+              Игра, в которой при клике на кнопку фон страницы меняется на
+              случайный.
+            </p>
+            <button onclick="randomColorGenerator()" class="game__button">
+              Играть!
+            </button>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer center">
